@@ -8,8 +8,6 @@ def my_form():
 
 @app.route('/', methods=['POST'])
 def my_form_post():
-    import requests
-    import json
     text = request.form['textt']
     text2 = request.form['text2']
     if text=="admin" and text2=="password":
