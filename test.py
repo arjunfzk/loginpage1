@@ -11,7 +11,7 @@ def my_form_post():
     text = request.form['textt']
     text2 = request.form['text2']
     if text=="admin" and text2=="password":
-        return "<h1>WELL DONE,now show your code and get your name registered</h1>"
+        return render_template("tempp.html")
     else:
     	return "NONO"
 if __name__ == '__main__':
