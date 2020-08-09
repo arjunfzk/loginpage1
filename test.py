@@ -10,7 +10,7 @@ def my_form():
 def my_form_post():
     text = request.form['textt']
     text2 = request.form['text2']
-    if text=="admin" and text2=="password":
+    if text=="admin" and text2=="admin":
         return render_template("tempp.html")
     else:
     	return "NONO"
